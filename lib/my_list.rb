@@ -17,13 +17,12 @@ class MyList
       to_enum(__method__)
     end
   end
-
 end
 
 list = MyList.new(1, 2, 3, 4)
 
-p list.my_all? {|e| e < 5}
-p list.my_all? {|e| e > 5}
-p list.my_any? {|e| e == 2}
-p list.my_any? {|e| e == 5}
-p list.my_filter {|e| e.even?}
+p list.my_all? { |e| e < 5 }
+p list.my_all? { |e| e > 5 }
+p list.my_any? { |e| e == 2 }
+p list.my_any? { |e| e == 5 }
+p list.my_filter(&:even?)

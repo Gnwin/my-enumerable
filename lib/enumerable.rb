@@ -1,10 +1,3 @@
-# rubocop:disable Metrics/PerceivedComplexity
-# rubocop:disable Metrics/CyclomaticComplexity
-# rubocop:disable Metrics/ModuleLength
-# rubocop:disable Metrics/MethodLength
-# rubocop:disable Lint/ToEnumArguments
-
-
 module Enumerable
   # 1.
   def my_all?(word = nil)
@@ -20,7 +13,7 @@ module Enumerable
       all
     end
 
-    if block_given? && word.nil? 
+    if block_given? && word.nil?
       my_each do |e|
         unless yield(e)
           all = !all
@@ -151,16 +144,3 @@ module Enumerable
     end
   end
 end
-
-
-# rubocop:enable Lint/ToEnumArguments
-# rubocop:enable Metrics/MethodLength
-# rubocop:enable Metrics/ModuleLength
-# rubocop:enable Metrics/CyclomaticComplexity
-# rubocop:enable Metrics/PerceivedComplexity
-
-
-# TEST SAMPLES AND ANSWERS
-# arr = [1, 2, 3, 4, 5]
-# ary = [1, 2, 4, 2]
-# ary = []

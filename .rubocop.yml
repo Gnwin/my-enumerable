@@ -10,7 +10,13 @@ AllCops:
 Layout/LineLength:
   Max: 120
 Metrics/MethodLength:
-  Max: 20
+  Max: 66
+Metrics/ModuleLength:
+  Max: 137
+Metrics/PerceivedComplexity:
+  Max: 23
+Metrics/CyclomaticComplexity:
+  Max: 21
 Metrics/AbcSize:
   Max: 50
 Metrics/ClassLength:
@@ -40,6 +46,10 @@ Layout/ExtraSpacing:
 Layout/MultilineMethodCallIndentation:
   Enabled: true
   EnforcedStyle: indented
+Lint/ToEnumArguments:
+  Enabled: false
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
 Lint/RaiseException:
   Enabled: false
 Lint/StructNewOverride:
