@@ -1,4 +1,4 @@
-module Enumerable
+module MyEnumerable
   # 1.
   def my_all?(word = nil)
     all = true
